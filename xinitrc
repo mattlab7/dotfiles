@@ -1,5 +1,5 @@
 dwm_datetime (){
-	s=$(date "+%d %b %R")
+	s=$(date "+%a %d %b %r")
 	echo -e "${s}"
 }
 
@@ -35,6 +35,7 @@ while true; do
 	xsetroot -name "$(dwm_cmus) $(dwm_datetime)"
 	sleep 1
 done &
+wpg -s ~/Pictures/wallpapers &
 fcitx5 -d &
 picom &
 exec dwm
