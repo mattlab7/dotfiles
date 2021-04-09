@@ -27,7 +27,7 @@ dwm_cmus () {
         printf "%s%s %s - %s " "$SEP1" "$STATUS" "$ARTIST" "$TRACK"
         printf "    %0d:%02d/" $((POSITION%3600/60)) $((POSITION%60))
         printf "%0d:%02d" $((DURATION%3600/60)) $((DURATION%60))
-        printf "%s%s\n" "$SHUFFLE" " |"
+        printf "%s%s\n" "$SHUFFLE" " |    "
     fi
 }
 
