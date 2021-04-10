@@ -38,4 +38,4 @@ done &
 wpg -s ~/Pictures/wallpapers &
 fcitx5 -d &
 picom &
-exec dwm
+exec dbus-launch dwm
